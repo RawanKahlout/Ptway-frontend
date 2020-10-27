@@ -1,0 +1,24 @@
+<div class="sidebar-wrapper">
+    <ul class="nav">
+        <li routerLinkActive="active" class="nav-item">
+            <a [routerLink]="['/my-cv']" class="nav-link">
+                <i class="material-icons">dashboard</i>
+                <p>السيرة الذاتيه</p>
+            </a>
+        </li>
+        <li routerLinkActive="active" class="nav-item">
+            <a [routerLink]="['/offers-list']" class="nav-link">
+                <i class="material-icons">notifications</i>قائمة العروض
+                    <span class="notification">{{count}}</span>
+               
+            </a>
+        </li>
+
+        <li routerLinkActive="active" class="nav-item">
+            <a (click)="logout()" [routerLink]="['null']" class="nav-link">
+                <i class="material-icons">input</i>
+                <p>تسجيل خروج</p>
+            </a>
+        </li>
+    </ul>
+</div>
